@@ -7,59 +7,95 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="css\nav.css">
 </head>
 <body>
 
-    <header>
-        <section class="imgFondo">
-            <section class="section-icons">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </section> 
+    <%- include ('./partials/header.ejs') %>
+    
+    <main>
+        
 
+        <section class="imgFondo">
+            
             <section class="titulo-desc">
                 <h1>inmobiliaria! alquileres con la mejor oferta</h1>
                 <button class="headerButton">Comprar ahora</button>
             </section>
         </section>
-    </header>
 
-    <main>
-        <p class="h2Propiedades">Propiedades</p>
+        <h1 id="busqueda" class="realizaBusqueda">Realiza tu busqueda</h1>
 
-        <section class="contenedorPrin">
-            <div class="contImgPres">
-                <img class="imgPres" src="img\casa.jpg" alt="">
+
+        <div class="cont-select">
+            <div class="select">
+                <select id="select1">
+                    <option value="">Selecciona Menú 1</option>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
             </div>
-            
-            <section>
-                <h2>Titulo Producto</h2>
-                <p>Descripcion</p>
-                <button class="botonCompra">Precio US$53.00</button>
-            </section>
-
-        </section>
-
-        <section class="contenedorPrin">
-            <div class="contImgPres">
-                <img class="imgPres" src="img\casa.jpg" alt="">
+    
+            <div class="select">
+                <select id="select2">
+                    <option value="">Selecciona Menú 2</option>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
             </div>
-            
-            <section>
-                <h2>Titulo Producto</h2>
-                <p>Descripcion</p>
-                <button class="botonCompra">Precio US$53.00</button>
-            </section>
+    
+            <div class="select">
+                <select id="select3">
+                    <option value="">Selecciona Menú 3</option>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
+            </div>
+    
+            <div class="select">
+                <select id="select4">
+                    <option value="">Selecciona Menú 4</option>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
+            </div>
 
-        </section>
+            <button class="buttonBuscar">Buscar</button>
+        </div>
 
-            <section class="contenedorPrin">
-                <div class="contImgPres">
-                    <img class="imgPres" src="img\casa.jpg" alt="">
-                </div>
+        
+
+       
+
+            <section class="contenedorPrin scroll-up">
                 
-                <section>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-slide">
+                                <img src="img/casa.jpg" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/casa2.jpg" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="" alt="Imagen 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://via.placeholder.com/600x300?text=Imagen+4" alt="Imagen 4">
+                            </div>
+                        </div>
+                        <button class="carousel-button prev" aria-label="Previous Slide">&#10094;</button>
+                        <button class="carousel-button next" aria-label="Next Slide">&#10095;</button>
+                    </div>
+                
+                
+                <section >
                     <h2>Titulo Producto</h2>
                     <p>Descripcion</p>
                     <button class="botonCompra">Precio US$53.00</button>
@@ -67,13 +103,78 @@
     
             </section>
 
+            <section class="contenedorPrin scroll-up">
+                
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-slide">
+                            <img src="img/casa.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/casa2.jpg" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="" alt="Imagen 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/600x300?text=Imagen+4" alt="Imagen 4">
+                        </div>
+                    </div>
+                    <button class="carousel-button prev" aria-label="Previous Slide">&#10094;</button>
+                    <button class="carousel-button next" aria-label="Next Slide">&#10095;</button>
+                </div>
+            
+            
+            <section >
+                <h2>Titulo Producto</h2>
+                <p>Descripcion</p>
+                <button class="botonCompra">Precio US$53.00</button>
+            </section>
+
+        </section>
+
+        <section class="contenedorPrin scroll-up">
+                
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide">
+                        <img src="img/casa.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/casa2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="" alt="Imagen 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://via.placeholder.com/600x300?text=Imagen+4" alt="Imagen 4">
+                    </div>
+                </div>
+                <button class="carousel-button prev" aria-label="Previous Slide">&#10094;</button>
+                <button class="carousel-button next" aria-label="Next Slide">&#10095;</button>
+            </div>
+        
+        
+        <section >
+            <h2>Titulo Producto</h2>
+            <p>Descripcion</p>
+            <button class="botonCompra">Precio US$53.00</button>
+        </section>
+
+    </section>
+
         </section>
 
     </main>
 
     <footer>
-
+        
     </footer>
+
+    <script src="js/carrusel.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/scroll2.js"></script>
 
 </body>
 </html>

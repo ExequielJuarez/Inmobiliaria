@@ -1,0 +1,96 @@
+/* Estilos generales del header */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ececec;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegúrate de que el header esté en primer plano */
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+/* Estilos del overlay */
+.overlay {
+    display: none; /* Inicialmente no se muestra */
+    position: fixed; /* Asegura que cubra toda la ventana */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    z-index: 999; /* Asegura que esté debajo del menú pero encima del contenido */
+}
+
+/* Estilos del menú para pantallas pequeñas */
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 250px;
+        background-color: rgba(28, 28, 28, 0.9);
+        padding: 2rem;
+        z-index: 1000;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-list li a {
+        color: #ececec;
+    }
+}
